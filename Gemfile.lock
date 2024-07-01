@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    debug_shrine (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  arm64-darwin-22
+  ruby
+
+DEPENDENCIES
+  debug_shrine!
+
+BUNDLED WITH
+   2.5.14

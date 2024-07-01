@@ -1,0 +1,13 @@
+require 'debug_shrine'
+require 'optparse'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "使用方法: debug_shrine [オプション]"
+
+  opts.on("-m", "--message MESSAGE", "願いを込めよ") do |m|
+    options[:message] = m
+  end
+end.parse!
+
+DebugShrine::Torii.place(options[:message])
